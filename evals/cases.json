@@ -1,0 +1,28 @@
+[
+    {
+        "name": "strong_software_architect_match",
+        "job_description": "Software Architect role requiring TypeScript, Angular, Node.js, microservices, Kubernetes, cloud architecture, SaaS design, CI/CD, mentoring, with AWS preferred.",
+        "candidate_profile": "15+ years software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, CI/CD, engineering leadership, mentoring, production cloud systems, and limited production AWS experience.",
+        "expected_decision": "APPLY",
+        "expected_score_min": 8.0,
+        "expected_score_max": 10.0,
+        "expected_cv": "Software Architect CV"
+    },
+    {
+        "name": "deep_ml_engineer_mismatch",
+        "job_description": "Senior Machine Learning Engineer requiring 5+ years building and training machine learning models with PyTorch and TensorFlow, production ML pipelines, Kubeflow, MLflow, model retraining, model drift monitoring, and advanced statistics.",
+        "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, microservices, Kubernetes, CI/CD, engineering leadership, and production cloud systems. Limited hands-on machine learning engineering experience.",
+        "expected_decision": "SKIP",
+        "expected_score_min": 0.0,
+        "expected_score_max": 4.0
+    },
+    {
+        "name": "partial_backend_architect_match",
+        "job_description": "Software Architect role requiring strong Java, Spring Boot, AWS, microservices, Kubernetes, PostgreSQL, system design, and technical leadership. Frontend experience is useful but not central.",
+        "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, PostgreSQL, CI/CD, cloud systems, and engineering leadership. Limited production AWS experience and no strong Java or Spring Boot background.",
+        "expected_decision": "REVIEW",
+        "expected_score_min": 4.0,
+        "expected_score_max": 7.0,
+        "expected_cv": "Software Architect CV"
+    }
+]
