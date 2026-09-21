@@ -1,6 +1,7 @@
 from prooffit.evaluator import evaluate_job
 from dotenv import load_dotenv
 from prooffit.cv_options import AVAILABLE_CVS
+from prooffit.requirement_extractor import extract_requirements
 
 load_dotenv()
 
@@ -20,6 +21,8 @@ The role includes:
 
 AWS experience is preferred.
 """
+
+requirements = extract_requirements(job_description)
 
 candidate_profile = """
 Candidate has 15+ years of software engineering experience.
@@ -41,6 +44,7 @@ job_fit_result = evaluate_job(
     job_description,
     candidate_profile,
     AVAILABLE_CVS,
+    requirements,
 )
 
 print(job_fit_result)

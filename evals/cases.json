@@ -1,12 +1,16 @@
 [
     {
         "name": "strong_software_architect_match",
-        "job_description": "Software Architect role requiring TypeScript, Angular, Node.js, microservices, Kubernetes, cloud architecture, SaaS design, CI/CD, mentoring, with AWS preferred.",
+        "job_description": "Software Architect role requiring TypeScript, Angular, Node.js, microservices, Kubernetes, cloud architecture, SaaS design, CI/CD, mentoring, and leading architecture decisions, with AWS preferred.",
         "candidate_profile": "15+ years software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, CI/CD, engineering leadership, mentoring, production cloud systems, and limited production AWS experience.",
         "expected_decision": "APPLY",
-        "expected_score_min": 8.0,
+        "expected_score_min": 7.5,
         "expected_score_max": 10.0,
-        "expected_cv": "Software Architect CV"
+        "expected_cv": "Software Architect CV",
+        "expected_requirement": {
+            "requirement_contains": "architecture decisions",
+            "status": "PARTIAL"
+        }
     },
     {
         "name": "deep_ml_engineer_mismatch",
@@ -24,5 +28,17 @@
         "expected_score_min": 4.0,
         "expected_score_max": 7.0,
         "expected_cv": "Software Architect CV"
+    },
+    {
+        "name": "weak_aws_exposure",
+        "job_description": "Software Architect role requiring strong production AWS architecture experience.",
+        "candidate_profile": "Software architect with experience building on-premises systems. Has completed AWS coursework and experimented with AWS services in small learning projects.",
+        "expected_decision": "SKIP",
+        "expected_score_min": 0.0,
+        "expected_score_max": 4.0,
+        "expected_requirement": {
+            "requirement_contains": "AWS",
+            "status": "WEAK"
+        }
     }
 ]

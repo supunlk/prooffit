@@ -8,6 +8,7 @@ def test_valid_job_fit_result():
         decision="APPLY",
         gaps=[],
         red_flags=[],
+        requirements=[],
         salary_read={
             "status": "NOT_LISTED",
             "details": "No salary provided.",
@@ -28,6 +29,7 @@ def test_fit_score_above_10_is_invalid():
             decision="APPLY",
             gaps=[],
             red_flags=[],
+            requirements=[],
             salary_read={
                 "status": "NOT_LISTED",
                 "details": "No salary provided.",
@@ -46,6 +48,7 @@ def test_decision_yes_is_invalid():
             decision="YES",
             gaps=[],
             red_flags=[],
+            requirements=[],
             salary_read={
                 "status": "NOT_LISTED",
                 "details": "No salary provided.",

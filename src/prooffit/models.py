@@ -22,11 +22,31 @@ class CVRecommendation(BaseModel):
     ]
     reason: str
 
+class JobRequirement(BaseModel):
+    requirement: str
+    importance: Literal["REQUIRED", "PREFERRED"]
+
+class JobRequirements(BaseModel):
+    requirements: list[JobRequirement]
+
+class RequirementAssessment(BaseModel):
+    requirement: str
+    status: Literal["MATCH", "PARTIAL", "WEAK", "GAP", "UNKNOWN"]
+    evidence: str | None = None
+    reason: str
+
+class JobFitEvaluation(BaseModel):
+    requirements: list[RequirementAssessment]
+    gaps: list[str]
+    red_flags: list[str]
+    salary_read: SalaryRead
+    which_cv: CVRecommendation
 
 class JobFitResult(BaseModel):
     fit_score: float = Field(ge=0, le=10)
     decision: Literal["APPLY", "REVIEW", "SKIP"]
     gaps: list[str]
     red_flags: list[str]
+    requirements: list[RequirementAssessment]
     salary_read: SalaryRead
     which_cv: CVRecommendation
