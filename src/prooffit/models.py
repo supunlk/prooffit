@@ -34,6 +34,7 @@ class RequirementAssessment(BaseModel):
     status: Literal["MATCH", "PARTIAL", "WEAK", "GAP", "UNKNOWN"]
     evidence: str | None = None
     reason: str
+    evidence_ids: list[str]
 
 class JobFitEvaluation(BaseModel):
     requirements: list[RequirementAssessment]
@@ -50,3 +51,16 @@ class JobFitResult(BaseModel):
     requirements: list[RequirementAssessment]
     salary_read: SalaryRead
     which_cv: CVRecommendation
+
+class CareerEvidence(BaseModel):
+    id: str
+    category: Literal["SKILL", "RESPONSIBILITY", "OUTCOME", "EDUCATION"]
+    statement: str
+    topics: list[str]
+    context: Literal[
+        "PRODUCTION",
+        "LIMITED_PRODUCTION",
+        "LEARNING",
+        "EDUCATION",
+        "NEGATIVE",
+    ]

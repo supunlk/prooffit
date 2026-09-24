@@ -1,6 +1,7 @@
 import json
 
 from dotenv import load_dotenv
+from prooffit.models import CareerEvidence
 
 from prooffit.cv_options import AVAILABLE_CVS
 from prooffit.evaluator import evaluate_job
@@ -15,10 +16,14 @@ with open("evals/cases.json", "r") as file:
 
     for case in cases:
         job_requirements = extract_requirements(case["job_description"])
+        candidate_evidence = [
+            CareerEvidence.model_validate(item)
+            for item in case["candidate_evidence"]
+        ]
 
         result = evaluate_job(
             case["job_description"],
-            case["candidate_profile"],
+            candidate_evidence,
             AVAILABLE_CVS,
             job_requirements,
         )

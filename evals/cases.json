@@ -1,44 +1,206 @@
 [
-    {
-        "name": "strong_software_architect_match",
-        "job_description": "Software Architect role requiring TypeScript, Angular, Node.js, microservices, Kubernetes, cloud architecture, SaaS design, CI/CD, mentoring, and leading architecture decisions, with AWS preferred.",
-        "candidate_profile": "15+ years software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, CI/CD, engineering leadership, mentoring, production cloud systems, and limited production AWS experience.",
-        "expected_decision": "APPLY",
-        "expected_score_min": 7.5,
-        "expected_score_max": 10.0,
-        "expected_cv": "Software Architect CV",
-        "expected_requirement": {
-            "requirement_contains": "architecture decisions",
-            "status": "PARTIAL"
-        }
+  {
+    "name": "strong_software_architect_match",
+    "job_description": "Software Architect role requiring TypeScript, Angular, Node.js, microservices, Kubernetes, cloud architecture, SaaS design, CI/CD, mentoring, and leading architecture decisions, with AWS preferred.",
+    "candidate_profile": "15+ years software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, CI/CD, engineering leadership, mentoring, production cloud systems, and limited production AWS experience.",
+    "expected_decision": "APPLY",
+    "expected_score_min": 7.5,
+    "expected_score_max": 10.0,
+    "expected_cv": "Software Architect CV",
+    "expected_requirement": {
+      "requirement_contains": "architecture decisions",
+      "status": "PARTIAL"
     },
-    {
-        "name": "deep_ml_engineer_mismatch",
-        "job_description": "Senior Machine Learning Engineer requiring 5+ years building and training machine learning models with PyTorch and TensorFlow, production ML pipelines, Kubeflow, MLflow, model retraining, model drift monitoring, and advanced statistics.",
-        "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, microservices, Kubernetes, CI/CD, engineering leadership, and production cloud systems. Limited hands-on machine learning engineering experience.",
-        "expected_decision": "SKIP",
-        "expected_score_min": 0.0,
-        "expected_score_max": 4.0
+    "candidate_evidence": [
+      {
+        "id": "evidence-001",
+        "category": "RESPONSIBILITY",
+        "statement": "15+ years of software engineering experience with software architecture.",
+        "topics": ["software architecture", "system design", "architecture decisions"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-002",
+        "category": "SKILL",
+        "statement": "Production experience with Angular and TypeScript.",
+        "topics": ["Angular", "TypeScript", "frontend"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-003",
+        "category": "SKILL",
+        "statement": "Production experience with Node.js, NestJS, and microservices.",
+        "topics": ["Node.js", "NestJS", "microservices", "backend"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-004",
+        "category": "SKILL",
+        "statement": "Production experience with Kubernetes and cloud systems.",
+        "topics": ["Kubernetes", "cloud", "cloud architecture"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-005",
+        "category": "SKILL",
+        "statement": "Experience with CI/CD.",
+        "topics": ["CI/CD"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-006",
+        "category": "RESPONSIBILITY",
+        "statement": "Engineering leadership and mentoring experience.",
+        "topics": ["engineering leadership", "technical leadership", "mentoring"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-007",
+        "category": "SKILL",
+        "statement": "Limited production AWS experience.",
+        "topics": ["AWS", "cloud"],
+        "context": "LIMITED_PRODUCTION"
+      }
+    ]
+  },
+  {
+    "name": "deep_ml_engineer_mismatch",
+    "job_description": "Senior Machine Learning Engineer requiring 5+ years building and training machine learning models with PyTorch and TensorFlow, production ML pipelines, Kubeflow, MLflow, model retraining, model drift monitoring, and advanced statistics.",
+    "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, microservices, Kubernetes, CI/CD, engineering leadership, and production cloud systems. Limited hands-on machine learning engineering experience.",
+    "expected_decision": "SKIP",
+    "expected_score_min": 0.0,
+    "expected_score_max": 4.0,
+    "candidate_evidence": [
+      {
+        "id": "evidence-001",
+        "category": "RESPONSIBILITY",
+        "statement": "15+ years of software engineering experience with software architecture.",
+        "topics": ["software architecture", "system design"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-002",
+        "category": "SKILL",
+        "statement": "Production experience with Angular, TypeScript, Node.js, and microservices.",
+        "topics": ["Angular", "TypeScript", "Node.js", "microservices"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-003",
+        "category": "SKILL",
+        "statement": "Experience with Kubernetes, CI/CD, and production cloud systems.",
+        "topics": ["Kubernetes", "CI/CD", "cloud"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-004",
+        "category": "RESPONSIBILITY",
+        "statement": "Engineering leadership experience.",
+        "topics": ["engineering leadership", "technical leadership"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-005",
+        "category": "SKILL",
+        "statement": "Limited hands-on machine learning engineering experience.",
+        "topics": ["machine learning", "ML"],
+        "context": "LIMITED_PRODUCTION"
+      }
+    ]
+  },
+  {
+    "name": "partial_backend_architect_match",
+    "job_description": "Software Architect role requiring strong Java, Spring Boot, AWS, microservices, Kubernetes, PostgreSQL, system design, and technical leadership. Frontend experience is useful but not central.",
+    "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, PostgreSQL, CI/CD, cloud systems, and engineering leadership. Limited production AWS experience and no strong Java or Spring Boot background.",
+    "expected_decision": "REVIEW",
+    "expected_score_min": 4.0,
+    "expected_score_max": 7.0,
+    "expected_cv": "Software Architect CV",
+    "candidate_evidence": [
+      {
+        "id": "evidence-001",
+        "category": "RESPONSIBILITY",
+        "statement": "15+ years of software engineering experience with software architecture.",
+        "topics": ["software architecture", "system design"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-002",
+        "category": "SKILL",
+        "statement": "Production experience with Angular and TypeScript.",
+        "topics": ["Angular", "TypeScript", "frontend"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-003",
+        "category": "SKILL",
+        "statement": "Production experience with Node.js, NestJS, and microservices.",
+        "topics": ["Node.js", "NestJS", "microservices", "backend"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-004",
+        "category": "SKILL",
+        "statement": "Experience with Kubernetes, PostgreSQL, CI/CD, and cloud systems.",
+        "topics": ["Kubernetes", "PostgreSQL", "CI/CD", "cloud"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-005",
+        "category": "RESPONSIBILITY",
+        "statement": "Engineering leadership experience.",
+        "topics": ["engineering leadership", "technical leadership"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-006",
+        "category": "SKILL",
+        "statement": "Limited production AWS experience.",
+        "topics": ["AWS", "cloud"],
+        "context": "LIMITED_PRODUCTION"
+      },
+      {
+        "id": "evidence-007",
+        "category": "SKILL",
+        "statement": "No strong Java or Spring Boot background.",
+        "topics": ["Java", "Spring Boot"],
+        "context": "NEGATIVE"
+      }
+    ]
+  },
+  {
+    "name": "weak_aws_exposure",
+    "job_description": "Software Architect role requiring strong production AWS architecture experience.",
+    "candidate_profile": "Software architect with experience building on-premises systems. Has completed AWS coursework and experimented with AWS services in small learning projects.",
+    "expected_decision": "SKIP",
+    "expected_score_min": 0.0,
+    "expected_score_max": 4.0,
+    "expected_requirement": {
+      "requirement_contains": "AWS",
+      "status": "WEAK"
     },
-    {
-        "name": "partial_backend_architect_match",
-        "job_description": "Software Architect role requiring strong Java, Spring Boot, AWS, microservices, Kubernetes, PostgreSQL, system design, and technical leadership. Frontend experience is useful but not central.",
-        "candidate_profile": "15+ years of software engineering experience with software architecture, Angular, TypeScript, Node.js, NestJS, microservices, Kubernetes, PostgreSQL, CI/CD, cloud systems, and engineering leadership. Limited production AWS experience and no strong Java or Spring Boot background.",
-        "expected_decision": "REVIEW",
-        "expected_score_min": 4.0,
-        "expected_score_max": 7.0,
-        "expected_cv": "Software Architect CV"
-    },
-    {
-        "name": "weak_aws_exposure",
-        "job_description": "Software Architect role requiring strong production AWS architecture experience.",
-        "candidate_profile": "Software architect with experience building on-premises systems. Has completed AWS coursework and experimented with AWS services in small learning projects.",
-        "expected_decision": "SKIP",
-        "expected_score_min": 0.0,
-        "expected_score_max": 4.0,
-        "expected_requirement": {
-            "requirement_contains": "AWS",
-            "status": "WEAK"
-        }
-    }
+    "candidate_evidence": [
+      {
+        "id": "evidence-001",
+        "category": "RESPONSIBILITY",
+        "statement": "Software architect with experience building on-premises systems.",
+        "topics": ["software architecture", "on-premises", "system design"],
+        "context": "PRODUCTION"
+      },
+      {
+        "id": "evidence-002",
+        "category": "EDUCATION",
+        "statement": "Completed AWS coursework.",
+        "topics": ["AWS", "cloud", "coursework"],
+        "context": "EDUCATION"
+      },
+      {
+        "id": "evidence-003",
+        "category": "SKILL",
+        "statement": "Experimented with AWS services in small learning projects.",
+        "topics": ["AWS", "cloud", "learning project"],
+        "context": "LEARNING"
+      }
+    ]
+  }
 ]
